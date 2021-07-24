@@ -1,0 +1,86 @@
+.preview {
+   display: flex;
+   padding: 5px;
+   background-color: rgba(182, 182, 182, 0.466);
+}
+
+.desktop, .mobile, .insta, .insta-body, .inta-body-text {
+   display: flex;
+   height: 100%;
+   flex-direction: column;
+}
+
+.desktop, .mobile, .insta {
+   height: 100%;
+   align-items: flex-start;
+   margin-bottom: 20px;
+   margin-left: 5px;
+}
+
+.desktop h3, .insta h3, .mobile h3 {
+   margin-left: 10px;
+   padding: 5px;
+   overflow: hidden;
+   font-size: 16px;
+}
+.desktop {
+   flex: 4;
+}
+.insta {
+   flex: 2;
+}
+
+.mobile {
+   flex: 3;
+}
+
+.insta-body {
+   width: 100%;
+   height: 100%;
+   align-items: center;
+}
+
+.previewimage {
+   width:100%;
+   height: 100px;
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: contain;
+}
+
+.inta-body-text, .insta-body {
+   justify-content: space-around;
+}
+
+.inta-body-text h3 {
+   font-size: 14px;
+}
+
+.inta-body-text p {
+   font-size: 12px;
+}
+
+@media (min-width:760px) and (max-width:1200px) {
+   .preview {
+      padding: 15px;
+      flex-direction: column;
+      width: 100%;
+   }
+}
+@media (max-width:760px) {
+   .preview {
+      flex-direction: column;
+      padding: 5px;
+      padding-top: 10px;
+   }
+   .desktop h3, .insta h3, .mobile h3 {
+      font-size: 14px;
+   }
+   .insta {
+      margin-bottom: 10px;
+   }
+   .previewimage {
+      height: 60%;
+   }
+   
+}

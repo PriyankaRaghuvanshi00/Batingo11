@@ -1,0 +1,82 @@
+
+.left-side {
+   height: 100vh;
+   padding: 15px;
+   display: flex;
+   flex-direction: column;
+   flex: 4;
+}
+
+.button {
+   display: flex;
+}
+
+.btn {
+   cursor: pointer;
+   border: none;
+   padding: 10px 15px;
+   border-radius: 10px;
+   color: black;
+   font-weight: 500;
+   margin: 5px;
+   background-color: rgba(211, 209, 209, 0.61);
+}
+
+.active {
+   font-weight: 500;
+   color: rgb(2, 62, 117);
+   background-color: rgba(0, 132, 255, 0.37)
+}
+
+.intro-text {
+   margin-top: 10px;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+}
+
+.intro-text h2 {
+   font-weight: 700;
+   font-size: 20px;
+   letter-spacing: 0.4px;
+   margin-bottom: 10px;
+}
+
+.intro-text p {
+   color: gray;
+}
+
+.input {
+   margin-top: 15px;
+   display: flex;
+   flex-direction: column;
+}
+
+.input h3 {
+   font-size: 16px;
+   letter-spacing: 0.5px;
+}
+
+.input textarea {
+   padding: 5px;
+   border: 1px solid gray;
+   font-size: 17px;
+   height: 200px;
+}
+
+
+@media (max-width:760px) {
+   .intro-text {
+      margin-top: 8px;
+   }
+   .intro-text h2 {
+      font-size: 19px;
+   }
+   .input {
+      margin-top: 19px;
+   }
+   .input h3 {
+      font-size: 15px;
+      margin-bottom: 10px;
+   }
+}
